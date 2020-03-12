@@ -24,6 +24,19 @@ const suffix = "" //筛选目录下需要上传的格式<br><br>
 
 5、运行main.go。选择目录或文件，上传至阿里云OSS。<br>
 
+```bash
+https://www.jianshu.com/p/72a14d754aa8  go build 不同系统下的可执行文件
+
+$ CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build test.go
+$ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go
+
+$ CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build test.go
+$ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build test.go
+
+$ SET CGO_ENABLED=0SET GOOS=darwin3 SET GOARCH=amd64 go build test.go
+$ SET CGO_ENABLED=0 SET GOOS=linux SET GOARCH=amd64 go build  test.go
+```
+
 ## License
 
 licensed under the [MIT license](https://opensource.org/licenses/MIT).
